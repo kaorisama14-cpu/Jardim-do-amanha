@@ -149,6 +149,18 @@
             gap: 30px;
         }
 
+        .basket-section { background-color: #f4f7f1; }
+        .basket-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; }
+        .basket-card { background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 20px rgba(0,0,0,0.1); transition: 0.3s; border: 1px solid #eee; }
+        .basket-card:hover { transform: translateY(-10px); }
+        .basket-img { height: 200px; background-size: cover; background-position: center; }
+        .basket-info { padding: 25px; text-align: center; }
+        .basket-info h3 { color: var(--basket-brown); margin-bottom: 10px; }
+        .price { font-size: 1.5rem; font-weight: bold; color: var(--primary-green); margin: 15px 0; display: block; }
+        
+        .btn-buy { display: inline-block; padding: 12px 30px; background: var(--primary-green); color: white; text-decoration: none; border-radius: 50px; font-weight: bold; transition: 0.3s; }
+        .btn-buy:hover { background: var(--basket-brown); }
+
         .info-card {
             background: var(--white);
             padding: 40px;
@@ -268,6 +280,7 @@
             <ul class="nav-links">
                 <li><a href="#inicio">Início</a></li>
                 <li><a href="#guia">Guia</a></li>
+                <li><a href="#cestas">Encomendar Cestas</a></li>
                 <li><a href="#beneficios">Benefícios</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
@@ -278,7 +291,8 @@
         <div class="hero-content">
             <h1>Cultive o Futuro na sua Própria Casa</h1>
             <p>Transforme pequenos espaços em fontes de vida, saúde e sustentabilidade.</p>
-            <a href="#guia" class="btn-primary">Aprender Agora</a>
+            <a href="#cestas" class="btn-buy" style="background: var(--white); color: var(--primary-green); margin-top: 20px;">Ver Cestas Disponíveis</a>
+            
         </div>
     </section>
 
@@ -302,6 +316,26 @@
             </div>
         </div>
     </section>
+
+    
+    <section id="cestas" class="basket-section">
+        <h2 class="section-title">Nossas Cestas Orgânicas</h2>
+        <p style="text-align: center; margin-bottom: 40px; color: #555;">Não tem espaço para plantar? Nós levamos a colheita até você!</p>
+        
+        <div class="basket-grid">
+            <div class="basket-card">
+                <div class="basket-img" style="background-image: url('https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=800&q=80');"></div>
+                <div class="basket-info">
+                    <h3>Cesta Broto</h3>
+                    <p>Ideal para uma pessoa. Contém 5 itens da estação entre folhagens e temperos.</p>
+                    <span class="price">R$ 45,00</span>
+                    <a href="https://wa.me/11945279871" target="_blank" class="btn-buy">Encomendar via WhatsApp</a>
+                </div>
+            </div>
+
+        </div>
+
+          </section>
 
     <section id="guia" class="guide-section">
         <h2 class="section-title">Guia de Cultivo para Iniciantes</h2>
@@ -383,3 +417,5 @@
 
 </body>
 </html>
+
+         
